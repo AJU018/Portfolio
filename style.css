@@ -1,5 +1,8 @@
+/* RESET */
 * {
-  margin: 0%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
@@ -7,49 +10,32 @@
   width: 0;
 }
 
+/* BODY */
 body {
+  font-family: Arial, sans-serif;
   background-image: url(gambar/bla.jpg);
-  height: 800px;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
-/*---------------------------------------------------------------Section-------------------------------------------------------------------------*/
-#index {
-  height: 800px;
-}
-
-#about {
-  height: 800px;
-  background-color: silver;
-}
-
-#services {
-  height: 800px;
-  background-image: url(gambar/Services.jpg);
-}
-
-#portfolio {
-  height: 800px;
-  background-image: url(gambar/back.png);
-}
-
-#contact {
-  height: 800px;
-  background-image: url(gambar/contact.png);
-}
-
-#footer {
-  height: 50px;
-}
-
-/*--------------------------------------------------------------Navigation-----------------------------------------------------------------------*/
+/* NAVIGATION */
 nav {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   width: 100%;
   position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  padding: 10px 30px;
+}
+
+.logo {
+  font-size: 20px;
+  color: white;
+  margin-right: auto;
 }
 
 nav a {
@@ -60,270 +46,208 @@ nav a {
   font-size: 20px;
   text-decoration: none;
   border-radius: 20px;
+  color: white;
 }
 
-a:link,
-a:visited {
-  color: #ffffff;
-}
-
-a:hover,
-a:active {
+nav a:hover {
   background-color: #ffffff;
   color: black;
 }
 
-.logo {
-  font-size: 20px;
-  color: white;
-  margin-right: auto;
-  margin-top: 15px;
-  padding-left: 50px;
+/* HOME */
+#index {
+  height: 800px;
 }
 
 .intro p {
   font-size: 50px;
   text-align: center;
-  color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: center;
+  color: white;
   position: relative;
   top: 300px;
+}
+
+/* ABOUT */
+#about {
+  background-color: silver;
+  height: 800px;
+  padding-top: 100px;
 }
 
 .about p {
   font-size: 50px;
   font-weight: bold;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  top: 870px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .kotak {
   background-image: url(gambar/ald.jpeg);
   width: 300px;
   height: 300px;
+  background-size: cover;
+  background-position: center;
   border: 1px solid;
-  position: relative;
-  top: 900px;
-  left: 20px;
+  margin: 0 auto 20px auto;
+}
+
+.maklumat {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .maklumat p,
-li {
-  font-size: 20px;
-  width: 60%;
-  position: relative;
-  left: 400px;
-  top: 590px;
+.maklumat li {
+  font-size: 18px;
+  margin-bottom: 15px;
 }
 
 ul {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-left: 20px;
+  margin: 20px 0;
 }
 
-/*---------------------------------------------------------------Services-----------------------------------------------------------------------*/
-
-h2 {
-  font-size: 50px;
-  position: relative;
-  top: 70px;
-}
-
-.tajuk {
-  color: #ffffff;
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  top: 80px;
-}
-
-.services p {
-  text-align: center;
-  color: #ffffff;
-  font-size: 1.1rem;
-}
-
-.service-content,
-h3 {
-  color: #000000;
-  font-size: 1.1rem;
-  margin: 14px 0;
+/* SERVICES */
+#services {
+  background-image: url(gambar/Services.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  padding: 100px 20px 50px 20px;
+  color: white;
 }
 
 .service-heading {
-  margin-bottom: 0;
+  font-size: 50px;
   text-align: center;
-  color: #ffffff;
+  margin-bottom: 10px;
 }
 
-.service-icon {
-  border: 2px solid black;
+.tajuk {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .keseluruhan {
-  color: #000000;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  position: relative;
-  top: 100px;
+  justify-content: center;
+  gap: 30px;
 }
 
 .kotak1 {
   background-color: #ffffff;
+  color: black;
   border: 5px solid;
   border-image: linear-gradient(black, orange) 1;
-  max-width: 25%;
-  width: 100%;
-  padding: 15px;
+  max-width: 300px;
+  padding: 20px;
   text-align: center;
-  align-items: center;
-  margin-bottom: 30px;
   cursor: pointer;
 }
 
-.service-icon {
-  width: 60px;
-  height: 60px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .kotak1:hover {
-  border: 5px solid;
   border-image: linear-gradient(red, orange) 1;
 }
 
-/*---------------------------------------------------------------Portfolio-----------------------------------------------------------------------*/
+.service-icon img {
+  width: 60px;
+  height: 60px;
+}
 
-.kepala {
-  color: #000000;
-  font-size: 50px;
-  position: relative;
-  top: 30px;
+/* PORTFOLIO */
+#portfolio {
+  background-image: url(gambar/back.png);
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  padding: 100px 20px;
 }
 
 .portfolio-kepala {
-  margin-bottom: 0;
+  font-size: 50px;
   text-align: center;
-  color: #ffffff;
+  color: white;
 }
 
 .keseluruhan2 {
-  color: #ffffff;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  position: relative;
-  top: 140px;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.kotak2,
+.kotak3,
+.kotak4 {
+  width: 400px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border: 10px solid;
+  cursor: pointer;
 }
 
 .kotak2 {
   background-image: url(gambar/gm1.png);
-  border: 10px solid;
-  border-image: linear-gradient(rgb(255, 255, 255), rgb(31, 92, 31)) 1;
-  width: 400px;
-  height: 400px;
-  text-align: center;
-  align-items: center;
-  margin-bottom: 30px;
-  cursor: pointer;
+  border-image: linear-gradient(white, green) 1;
 }
 
 .kotak3 {
   background-image: url(gambar/gm2.png);
-  border: 10px solid;
-  border-image: linear-gradient(rgb(255, 255, 255), pink) 1;
-  width: 400px;
-  height: 400px;
-  text-align: center;
-  align-items: center;
-  margin-bottom: 30px;
-  cursor: pointer;
+  border-image: linear-gradient(white, pink) 1;
 }
 
 .kotak4 {
   background-image: url(gambar/gm3.png);
-  border: 10px solid;
-  border-image: linear-gradient(rgb(255, 255, 255), salmon) 1;
-  width: 400px;
-  height: 400px;
-  text-align: center;
-  align-items: center;
-  margin-bottom: 30px;
-  cursor: pointer;
+  border-image: linear-gradient(white, salmon) 1;
 }
 
 .kotak2:hover {
-  border: 10px solid;
-  border-image: linear-gradient(rgb(31, 92, 31), rgb(255, 255, 255)) 1;
+  border-image: linear-gradient(green, white) 1;
 }
-
 .kotak3:hover {
-  border: 10px solid;
-  border-image: linear-gradient(pink, rgb(255, 255, 255)) 1;
+  border-image: linear-gradient(pink, white) 1;
 }
-
 .kotak4:hover {
-  border: 10px solid;
-  border-image: linear-gradient(salmon, rgb(255, 255, 255)) 1;
+  border-image: linear-gradient(salmon, white) 1;
 }
 
-/*----------------------------------------------------------------Contact------------------------------------------------------------------------*/
-
-.map {
-  position: relative;
-  left: 80px;
-  bottom: 300px;
-  width: 500px;
-  height: 500px;
-}
-
-.contact {
-  background-color: antiquewhite;
+/* CONTACT */
+#contact {
+  background-image: url(gambar/contact.png);
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
 }
 
 .contact-heading {
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 0;
-}
-
-.contact-tajuk {
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  top: 70px;
-}
-
-.contact p {
+  color: white;
   text-align: center;
-  color: black;
-  font-size: 17.6px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.contact-tajuk p {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 18px;
 }
 
 .contact-content {
-  position: relative;
-  top: 100px;
-  right: 180px;
-}
-
-.contact-info {
   display: flex;
-  justify-content: end;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
 }
 
 .contact-form {
-  display: flex;
-  justify-content: end;
+  flex: 1;
+  max-width: 500px;
 }
 
 .contact-form form {
@@ -331,69 +255,89 @@ h3 {
   flex-direction: column;
 }
 
-input[type="submit"] {
-  background: #481e14;
-  color: rgb(255, 255, 255);
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #481e14;
+  color: white;
+  font-size: 18px;
+  border: none;
   cursor: pointer;
-  letter-spacing: 2px;
-  font-size: 20px;
+  transition: background 0.3s ease;
 }
 
-input {
-  width: 500px;
-  height: 50px;
+.contact-form input[type="submit"]:hover {
+  background-color: #5c2a1e;
 }
 
-textarea {
-  width: 500px;
-  height: 100px;
+.map {
+  flex: 1;
+  max-width: 500px;
+  height: 400px;
 }
 
-/*----------------------------------------------------------------Contact------------------------------------------------------------------------*/
+/* FOOTER */
+#footer {
+  background-color: black;
+  padding: 15px 0;
+}
 
 .footer {
   display: flex;
   justify-content: center;
-  background-color: transparent;
-  color: #ffffff;
+  gap: 20px;
+}
+
+.footer div {
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .icon1 {
-  width: 48px;
-  height: 48px;
   background-image: url(gambar/instagram-48.png);
-  background-repeat: no-repeat;
 }
-
 .icon2 {
-  width: 48px;
-  height: 48px;
   background-image: url(gambar/facebook-6-48.png);
-  background-repeat: no-repeat;
-  margin-left: 10px;
 }
-
 .icon3 {
-  width: 48px;
-  height: 48px;
   background-image: url(gambar/twitter-3-48.png);
-  background-repeat: no-repeat;
-  margin-left: 10px;
 }
 
-@media print {
-  /* All your print styles go here */
-  #index,
-  #footer,
-  #about,
-  #services {
-    background-color: red;
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
   }
-}
 
-@media only screen and (max-width: 768px) {
-  body {
-    background-color: lightblue;
+  .intro p {
+    top: 200px;
+    font-size: 36px;
+  }
+
+  .keseluruhan,
+  .keseluruhan2,
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .kotak1,
+  .kotak2,
+  .kotak3,
+  .kotak4,
+  .contact-form,
+  .map {
+    max-width: 90%;
     width: 100%;
   }
 }
