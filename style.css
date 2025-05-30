@@ -1,8 +1,5 @@
-/* RESET */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0%;
   scroll-behavior: smooth;
 }
 
@@ -10,32 +7,47 @@
   width: 0;
 }
 
-/* BODY */
 body {
-  font-family: Arial, sans-serif;
   background-image: url(gambar/bla.jpg);
-  background-size: cover;
+  height: 800px;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* NAVIGATION */
+#index {
+  height: 800px;
+}
+
+#about {
+  height: 800px;
+  background-color: silver;
+}
+
+#services {
+  height: 800px;
+  background-image: url(gambar/Services.jpg);
+}
+
+#portfolio {
+  height: 800px;
+  background-image: url(gambar/back.png);
+}
+
+#contact {
+  height: 800px;
+  background-image: url(gambar/contact.png);
+}
+
+#footer {
+  height: 50px;
+}
+
 nav {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
   width: 100%;
   position: fixed;
-  top: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 1000;
-  padding: 10px 30px;
-}
-
-.logo {
-  font-size: 20px;
-  color: white;
-  margin-right: auto;
 }
 
 nav a {
@@ -46,138 +58,160 @@ nav a {
   font-size: 20px;
   text-decoration: none;
   border-radius: 20px;
-  color: white;
 }
 
-nav a:hover {
+a:link,
+a:visited {
+  color: #ffffff;
+}
+
+a:hover,
+a:active {
   background-color: #ffffff;
   color: black;
 }
 
-/* HOME */
-#index {
-  height: 800px;
+.logo {
+  font-size: 20px;
+  color: white;
+  margin-right: auto;
+  margin-top: 15px;
+  padding-left: 50px;
 }
 
 .intro p {
   font-size: 50px;
   text-align: center;
-  color: white;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
   position: relative;
   top: 300px;
-}
-
-/* ABOUT */
-#about {
-  background-color: silver;
-  height: 800px;
-  padding-top: 100px;
 }
 
 .about p {
   font-size: 50px;
   font-weight: bold;
-  text-align: center;
-  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 870px;
 }
 
 .kotak {
   background-image: url(gambar/ald.jpeg);
   width: 300px;
   height: 300px;
-  background-size: cover;
-  background-position: center;
   border: 1px solid;
-  margin: 0 auto 20px auto;
-}
-
-.maklumat {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 20px;
+  position: relative;
+  top: 900px;
+  left: 20px;
 }
 
 .maklumat p,
-.maklumat li {
-  font-size: 18px;
-  margin-bottom: 15px;
+li {
+  font-size: 20px;
+  width: 60%;
+  position: relative;
+  left: 400px;
+  top: 590px;
 }
 
 ul {
-  padding-left: 20px;
-  margin: 20px 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-/* SERVICES */
-#services {
-  background-image: url(gambar/Services.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 800px;
-  padding: 100px 20px 50px 20px;
-  color: white;
-}
-
-.service-heading {
+h2 {
   font-size: 50px;
-  text-align: center;
-  margin-bottom: 10px;
+  position: relative;
+  top: 70px;
 }
 
 .tajuk {
+  color: #ffffff;
   font-size: 20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 80px;
+}
+
+.services p {
   text-align: center;
-  margin-bottom: 40px;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.service-content,
+h3 {
+  color: #000000;
+  font-size: 1.1rem;
+  margin: 14px 0;
+}
+
+.service-heading {
+  margin-bottom: 0;
+  text-align: center;
+  color: #ffffff;
+}
+
+.service-icon {
+  border: 2px solid black;
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .keseluruhan {
+  color: #000000;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+  justify-content: space-around;
+  position: relative;
+  top: 100px;
 }
 
 .kotak1 {
   background-color: #ffffff;
-  color: black;
   border: 5px solid;
   border-image: linear-gradient(black, orange) 1;
-  max-width: 300px;
-  padding: 20px;
+  max-width: 25%;
+  width: 100%;
+  padding: 15px;
   text-align: center;
+  align-items: center;
+  margin-bottom: 30px;
   cursor: pointer;
 }
 
 .kotak1:hover {
+  border: 5px solid;
   border-image: linear-gradient(red, orange) 1;
 }
 
-.service-icon img {
-  width: 60px;
-  height: 60px;
-}
-
-/* PORTFOLIO */
-#portfolio {
-  background-image: url(gambar/back.png);
-  background-size: cover;
-  background-position: center;
-  height: 800px;
-  padding: 100px 20px;
+.kepala {
+  color: #000000;
+  font-size: 50px;
+  position: relative;
+  top: 30px;
 }
 
 .portfolio-kepala {
-  font-size: 50px;
+  margin-bottom: 0;
   text-align: center;
-  color: white;
+  color: #ffffff;
 }
 
 .keseluruhan2 {
+  color: #ffffff;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 60px;
+  justify-content: space-around;
+  position: relative;
+  top: 140px;
 }
 
 .kotak2,
@@ -185,159 +219,143 @@ ul {
 .kotak4 {
   width: 400px;
   height: 400px;
-  background-size: cover;
-  background-position: center;
-  border: 10px solid;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 30px;
   cursor: pointer;
 }
 
 .kotak2 {
   background-image: url(gambar/gm1.png);
-  border-image: linear-gradient(white, green) 1;
+  border: 10px solid;
+  border-image: linear-gradient(rgb(255, 255, 255), rgb(31, 92, 31)) 1;
 }
 
 .kotak3 {
   background-image: url(gambar/gm2.png);
-  border-image: linear-gradient(white, pink) 1;
+  border: 10px solid;
+  border-image: linear-gradient(rgb(255, 255, 255), pink) 1;
 }
 
 .kotak4 {
   background-image: url(gambar/gm3.png);
-  border-image: linear-gradient(white, salmon) 1;
+  border: 10px solid;
+  border-image: linear-gradient(rgb(255, 255, 255), salmon) 1;
 }
 
 .kotak2:hover {
-  border-image: linear-gradient(green, white) 1;
+  border-image: linear-gradient(rgb(31, 92, 31), rgb(255, 255, 255)) 1;
 }
+
 .kotak3:hover {
-  border-image: linear-gradient(pink, white) 1;
+  border-image: linear-gradient(pink, rgb(255, 255, 255)) 1;
 }
+
 .kotak4:hover {
-  border-image: linear-gradient(salmon, white) 1;
-}
-
-/* CONTACT */
-#contact {
-  background-image: url(gambar/contact.png);
-  background-size: cover;
-  background-position: center;
-  padding: 80px 20px;
-}
-
-.contact-heading {
-  color: white;
-  text-align: center;
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-.contact-tajuk p {
-  color: white;
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 18px;
-}
-
-.contact-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-}
-
-.contact-form {
-  flex: 1;
-  max-width: 500px;
-}
-
-.contact-form form {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 12px;
-  margin-bottom: 15px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.contact-form input[type="submit"] {
-  background-color: #481e14;
-  color: white;
-  font-size: 18px;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.contact-form input[type="submit"]:hover {
-  background-color: #5c2a1e;
+  border-image: linear-gradient(salmon, rgb(255, 255, 255)) 1;
 }
 
 .map {
-  flex: 1;
-  max-width: 500px;
-  height: 400px;
+  position: relative;
+  left: 80px;
+  bottom: 300px;
+  width: 500px;
+  height: 500px;
 }
 
-/* FOOTER */
-#footer {
-  background-color: black;
-  padding: 15px 0;
+.contact-heading {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.contact-tajuk {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 70px;
+}
+
+.contact-content {
+  position: relative;
+  top: 100px;
+  right: 180px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: end;
+}
+
+input[type="submit"] {
+  background: #481e14;
+  color: #ffffff;
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+input,
+textarea {
+  width: 500px;
+}
+
+textarea {
+  height: 100px;
 }
 
 .footer {
   display: flex;
   justify-content: center;
-  gap: 20px;
 }
 
-.footer div {
+.icon1, .icon2, .icon3 {
   width: 48px;
   height: 48px;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .icon1 {
   background-image: url(gambar/instagram-48.png);
 }
+
 .icon2 {
   background-image: url(gambar/facebook-6-48.png);
+  margin-left: 10px;
 }
+
 .icon3 {
   background-image: url(gambar/twitter-3-48.png);
+  margin-left: 10px;
 }
 
-/* RESPONSIVE DESIGN */
-@media screen and (max-width: 768px) {
-  nav {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+/* Scroll to Top Button */
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+  font-size: 24px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
 
-  .intro p {
-    top: 200px;
-    font-size: 36px;
-  }
+#scrollTopBtn:hover {
+  background-color: #555;
+}
 
-  .keseluruhan,
-  .keseluruhan2,
-  .contact-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .kotak1,
-  .kotak2,
-  .kotak3,
-  .kotak4,
-  .contact-form,
-  .map {
-    max-width: 90%;
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: lightblue;
     width: 100%;
   }
 }
