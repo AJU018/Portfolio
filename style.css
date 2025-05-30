@@ -15,7 +15,6 @@ body {
   background-size: cover;
 }
 
-/*---------------------------------------------------------------Section-------------------------------------------------------------------------*/
 #index {
   height: 800px;
 }
@@ -44,7 +43,6 @@ body {
   height: 50px;
 }
 
-/*--------------------------------------------------------------Navigation-----------------------------------------------------------------------*/
 nav {
   display: flex;
   justify-content: flex-end;
@@ -124,8 +122,6 @@ ul {
   margin-bottom: 30px;
 }
 
-/*---------------------------------------------------------------Services-----------------------------------------------------------------------*/
-
 h2 {
   font-size: 50px;
   position: relative;
@@ -162,6 +158,11 @@ h3 {
 
 .service-icon {
   border: 2px solid black;
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .keseluruhan {
@@ -186,20 +187,10 @@ h3 {
   cursor: pointer;
 }
 
-.service-icon {
-  width: 60px;
-  height: 60px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .kotak1:hover {
   border: 5px solid;
   border-image: linear-gradient(red, orange) 1;
 }
-
-/*---------------------------------------------------------------Portfolio-----------------------------------------------------------------------*/
 
 .kepala {
   color: #000000;
@@ -223,58 +214,46 @@ h3 {
   top: 140px;
 }
 
-.kotak2 {
-  background-image: url(gambar/gm1.png);
-  border: 10px solid;
-  border-image: linear-gradient(rgb(255, 255, 255), rgb(31, 92, 31)) 1;
+.kotak2,
+.kotak3,
+.kotak4 {
   width: 400px;
   height: 400px;
   text-align: center;
   align-items: center;
   margin-bottom: 30px;
   cursor: pointer;
+}
+
+.kotak2 {
+  background-image: url(gambar/gm1.png);
+  border: 10px solid;
+  border-image: linear-gradient(rgb(255, 255, 255), rgb(31, 92, 31)) 1;
 }
 
 .kotak3 {
   background-image: url(gambar/gm2.png);
   border: 10px solid;
   border-image: linear-gradient(rgb(255, 255, 255), pink) 1;
-  width: 400px;
-  height: 400px;
-  text-align: center;
-  align-items: center;
-  margin-bottom: 30px;
-  cursor: pointer;
 }
 
 .kotak4 {
   background-image: url(gambar/gm3.png);
   border: 10px solid;
   border-image: linear-gradient(rgb(255, 255, 255), salmon) 1;
-  width: 400px;
-  height: 400px;
-  text-align: center;
-  align-items: center;
-  margin-bottom: 30px;
-  cursor: pointer;
 }
 
 .kotak2:hover {
-  border: 10px solid;
   border-image: linear-gradient(rgb(31, 92, 31), rgb(255, 255, 255)) 1;
 }
 
 .kotak3:hover {
-  border: 10px solid;
   border-image: linear-gradient(pink, rgb(255, 255, 255)) 1;
 }
 
 .kotak4:hover {
-  border: 10px solid;
   border-image: linear-gradient(salmon, rgb(255, 255, 255)) 1;
 }
-
-/*----------------------------------------------------------------Contact------------------------------------------------------------------------*/
 
 .map {
   position: relative;
@@ -282,10 +261,6 @@ h3 {
   bottom: 300px;
   width: 500px;
   height: 500px;
-}
-
-.contact {
-  background-color: antiquewhite;
 }
 
 .contact-heading {
@@ -303,13 +278,6 @@ h3 {
   top: 70px;
 }
 
-.contact p {
-  text-align: center;
-  color: black;
-  font-size: 17.6px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 .contact-content {
   position: relative;
   top: 100px;
@@ -321,74 +289,68 @@ h3 {
   justify-content: end;
 }
 
-.contact-form {
-  display: flex;
-  justify-content: end;
-}
-
-.contact-form form {
-  display: flex;
-  flex-direction: column;
-}
-
 input[type="submit"] {
   background: #481e14;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   cursor: pointer;
   letter-spacing: 2px;
   font-size: 20px;
 }
 
-input {
+input,
+textarea {
   width: 500px;
-  height: 50px;
 }
 
 textarea {
-  width: 500px;
   height: 100px;
 }
-
-/*----------------------------------------------------------------Contact------------------------------------------------------------------------*/
 
 .footer {
   display: flex;
   justify-content: center;
-  background-color: transparent;
-  color: #ffffff;
+}
+
+.icon1, .icon2, .icon3 {
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
 }
 
 .icon1 {
-  width: 48px;
-  height: 48px;
   background-image: url(gambar/instagram-48.png);
-  background-repeat: no-repeat;
 }
 
 .icon2 {
-  width: 48px;
-  height: 48px;
   background-image: url(gambar/facebook-6-48.png);
-  background-repeat: no-repeat;
   margin-left: 10px;
 }
 
 .icon3 {
-  width: 48px;
-  height: 48px;
   background-image: url(gambar/twitter-3-48.png);
-  background-repeat: no-repeat;
   margin-left: 10px;
 }
 
-@media print {
-  /* All your print styles go here */
-  #index,
-  #footer,
-  #about,
-  #services {
-    background-color: red;
-  }
+/* Scroll to Top Button */
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+  font-size: 24px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+#scrollTopBtn:hover {
+  background-color: #555;
 }
 
 @media only screen and (max-width: 768px) {
