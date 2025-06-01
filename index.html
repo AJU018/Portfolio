@@ -17,7 +17,19 @@
       <a href="#services">Services</a>
       <a href="#portfolio">Portfolio</a>
       <a href="#contact">Contact</a>
+
+      <!-- Tambah butang toggle dark mode -->
+     <button id="darkModeToggle" aria-label="Toggle Dark Mode" title="Toggle Dark Mode">🌙</button>
     </nav>
+
+  <script>
+  const toggleBtn = document.getElementById('darkModeToggle');
+
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+  });
+</script>
 
     <div class="intro">
       <p>Hi, It's Me ALD</p>
