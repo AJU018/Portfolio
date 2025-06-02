@@ -359,3 +359,23 @@ textarea {
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 1024px) {
+  .keseluruhan2 {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .kotak2, .kotak3, .kotak4 {
+    width: 80%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .kotak2, .kotak3, .kotak4 {
+    width: 95%;
+  }
+}
