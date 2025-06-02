@@ -360,19 +360,41 @@ textarea {
   }
 }
 
-/* Dark mode styles */
+/* RESPONSIVE LAYOUT */
+@media only screen and (max-width: 1024px) {
+  .keseluruhan2 {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .kotak2, .kotak3, .kotak4 {
+    width: 80%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .kotak2, .kotak3, .kotak4 {
+    width: 95%;
+  }
+}
+
+/* DARK MODE */
 body.dark-mode {
   background-color: #121212 !important;
   color: #e0e0e0 !important;
 }
 
-/* Contoh gelap untuk elemen asas */
 body.dark-mode nav {
   background-color: #1e1e1e;
 }
+
 body.dark-mode nav a {
   color: #bbb;
 }
+
 body.dark-mode nav a:hover,
 body.dark-mode nav a:active {
   background-color: #bbb;
@@ -395,4 +417,6 @@ body.dark-mode #scrollTopBtn {
   background: none;
   border: none;
   cursor: pointer;
+}
+
 }
