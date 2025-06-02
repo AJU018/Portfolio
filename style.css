@@ -359,3 +359,40 @@ textarea {
     width: 100%;
   }
 }
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
+}
+
+/* Contoh gelap untuk elemen asas */
+body.dark-mode nav {
+  background-color: #1e1e1e;
+}
+body.dark-mode nav a {
+  color: #bbb;
+}
+body.dark-mode nav a:hover,
+body.dark-mode nav a:active {
+  background-color: #bbb;
+  color: #121212;
+}
+
+body.dark-mode .footer {
+  background-color: #222;
+  color: #eee;
+}
+
+body.dark-mode #scrollTopBtn {
+  background-color: #555;
+  color: #fff;
+}
+
+#darkModeToggle {
+  margin-left: 20px;
+  font-size: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
